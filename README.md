@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: We need find naked twins first by constructing frequency table for each unit: 1. Two possible values; 2. The value combinations appears twice in the unit; Next we replace those values with empty strings for the rest cells in the unit. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: The key is to add diagonal unit to the unitlist. Once it's done, everything else could be handled using methods shown in the course. 
 
 ### Install
 
