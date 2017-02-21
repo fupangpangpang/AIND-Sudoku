@@ -1,13 +1,13 @@
-# Artificial Intelligence Nanodegree
+d# Artificial Intelligence Nanodegree
 ## Introductory Project: Diagonal Sudoku Solver
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: We need find naked twins first by constructing frequency table for each unit: 1. Two possible values; 2. The value combinations appears twice in the unit; Next we replace those values with empty strings for the rest cells in the unit. 
+A: We need find naked twins first by constructing frequency table for each unit: 1. Two possible values; 2. The value combinations appears twice in the unit; Next we replace those values with empty strings for the rest cells in the unit; Using naked twins strategies, we make sure twin values are not possible solutions for the cells other than the twin cells. It helps reduce the number of possible solutions for other cells, simply search tree and might in turn speed up search in the later stage. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: The key is to add diagonal unit to the unitlist. Once it's done, everything else could be handled using methods shown in the course. 
+A: The key is to add diagonal unit to the unitlist. Once it's done, everything else could be handled using methods shown in the course. Diagonal sudoku required that numbers 1 to 9 should all appear exactly once. It's similar to the requirement for each row, column and 3x3 subsquares. By adding diagonal unit to the unit list, we are able to eliminate assigned number in the diagonal from the rest cells in the diagnoal; assign number if the number is only possible in one cell of diagonal; eliminate twin values from the cells other than twin cells in the diagnoal. 
 
 ### Install
 
